@@ -1,0 +1,141 @@
+// main: ../style.less
+
+/* HEADER */
+.hero {
+    background: url("../img/hero_bg.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 650px) 180px;
+    margin: 0 auto;
+    max-width: 1800px;
+
+}
+
+.header_container {
+    display: flex;
+    padding-top: 40px;
+}
+
+.header_logo {
+    margin-right: auto;
+}
+
+.nav_list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_item {
+    list-style-type: none;
+}
+
+.nav_links {
+    margin-right: 68px;
+    text-decoration: none;
+    color: @black;
+    display: block;
+}
+
+.nav_links::after {
+    margin-top: 10px;
+    content: "";
+    width: 0px;
+    display: block;
+    height: 2px;
+    background-color: #717CFF;
+    transition: width .3s;
+}
+
+.nav_links:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.nav_btn {
+    text-decoration: none;
+    color: @black;
+    border: 2px solid #717CFF;
+    padding: 10px 33px;
+    border-radius: 11px;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // position: relative;
+}
+
+/* HERO */
+.hero_inner {
+    margin-top: 130px;    
+}
+.hero_title {
+    max-width: 418px;
+
+}
+
+.hero_title h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 66px;
+
+}
+
+.hero_title h1 span {
+    color: @primary;
+}
+
+.hero_text {
+    max-width: 600px;
+
+}
+
+.hero_text p{
+    text-align: left;
+    line-height: 38px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #7D7D7D;
+    margin-top: 15px;
+}
+
+.hero_button {
+    padding: 12px 90px 12px 34px;
+    border-radius: 11px;
+    outline: none;
+    border: none;
+    background-color: @primary;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.hero_button::after {
+    content: "";
+    background: url("../img/arrow_forward_24px.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 17px;
+    right: 20px;
+}
+
+.hero_social {
+    margin-top: 100px;
+    max-width: 120px;
+    margin-right: 0;
+    padding-bottom: 50px;
+}
+
+.hero_social img:not(:last-child) {
+    margin-right: 23px;
+}
+
+
+
